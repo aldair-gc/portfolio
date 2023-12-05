@@ -17,15 +17,32 @@ const config: Config = {
         primary: colors.zinc,
         secondary: colors.rose,
       },
+      dropShadow: {
+        light: "0 0 5px rgb(255 255 255)",
+      },
       keyframes: {
         blink: {
           "0%, 100%": { opacity: "0" },
           "50%": { opacity: "1" },
         },
+        wave: {
+          "0%": {
+            transform: "scale(1)",
+            opacity: "0",
+          },
+          "10%": {
+            opacity: "0.2",
+          },
+          "100%": {
+            transform: "scale(3)",
+            opacity: "0",
+          },
+        },
       },
-      animation: {
-        blink: "blink 1s cubic-bezier(0.2, 0, 0.7, 1) infinite",
-      },
+    },
+    animation: {
+      blink: "blink 1s cubic-bezier(0.2, 0, 0.7, 1) infinite",
+      wave: "wave 3s cubic-bezier(0, 0, 0.2, 1) infinite",
     },
   },
   plugins: [],

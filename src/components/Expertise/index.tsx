@@ -1,6 +1,7 @@
 import Section from "../Section";
 import { ExpertiseInterface } from "@/interfaces/expertise.interface";
-import SkillGroup from "./SkillGroup";
+import { SkillGroup } from "./SkillGroup";
+import { Container } from "../Container";
 
 interface Props {
   data: ExpertiseInterface[];
@@ -8,18 +9,16 @@ interface Props {
 
 export default function Expertise({ data }: Props) {
   return (
-    <div className="w-full mb-40">
-      <div className="flex flex-col w-full max-w-7xl mx-auto px-4 gap-16">
-        <Section name="expertise" />
-        <div className="flex flex-col gap-20 pl-20 pr-10">
+    <div className="w-full" id="expertise">
+      <Section title="expertise" closing="squareBrace" className="sm:pl-20 py-20 w-full">
+        <div className="flex flex-col gap-16 w-fit">
           {data.map((project, ind) => (
-            <SkillGroup key={ind} name={project.name} skills={project.skills} />
+            <Container key={ind} closing="curlyBrace">
+              <SkillGroup name={project.name} skills={project.skills} />
+            </Container>
           ))}
         </div>
-        <div className="flex items-center gap-8">
-          <h1 className="text-4xl text-primary-400 font-medium">];</h1>
-        </div>
-      </div>
+      </Section>
     </div>
   );
 }

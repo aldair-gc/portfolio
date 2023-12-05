@@ -1,26 +1,26 @@
-import Skill from "./Skill";
+import { Container } from "../Container";
 import { SkillInterface } from "@/interfaces/skill-interface";
+import { Skill } from "./Skill";
 
 interface Props {
   name: string;
   skills: SkillInterface[];
 }
 
-export default function SkillGroup({ name, skills }: Props) {
+export function SkillGroup({ name, skills }: Props) {
   return (
-    <section className="flex flex-col">
-      <div className="flex p-6 w-fit bg-primary-400 shadow-2xl flex-col gap-10 text-base">
-        <h3 className="text-2xl text-primary-800">
-          {name}
-          <span className="text-primary-600">{": ["}</span>
-        </h3>
-        <div className="flex flex-wrap gap-2 pl-12">
-          {skills.map((skill) => (
-            <Skill key={skill.name} name={skill.name} imageSrc={skill.imageSrc} />
+    <div className="flex w-fit flex-col gap-4">
+      <h3 className="text-2xl text-primary-800 dark:text-primary-100">
+        {name}
+        <span className="text-primary-600 dark:text-primary-400">:</span>
+      </h3>
+      <Container closing="squareBrace" shadow={false} className="sm:pl-20">
+        <div className="flex flex-wrap gap-2 max-w-2xl">
+          {skills.map((skill, ind) => (
+            <Skill key={ind} {...skill} />
           ))}
         </div>
-        <p className="text-2xl text-primary-600">{"],"}</p>
-      </div>
-    </section>
+      </Container>
+    </div>
   );
 }

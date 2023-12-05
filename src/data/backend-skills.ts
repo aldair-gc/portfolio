@@ -33,7 +33,7 @@ export const backendSkills = [
   },
   {
     name: "Express",
-    imageSrc: "/images/express.png",
+    imageSrc: "/images/expressjs.png",
   },
   {
     name: "C",

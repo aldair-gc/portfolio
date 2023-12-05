@@ -1,6 +1,6 @@
 import { ImageInterface } from "./image-interface";
 
-export interface AttributeInterface {
+export interface ItemInterface {
   name: string;
   value?: string;
   href?: string;

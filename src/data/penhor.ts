@@ -8,35 +8,31 @@ export const penhor = [
     value: "2022",
   },
   {
+    name: "overview",
+    value:
+      "System for pawn evaluators to work with gemology, watchmaking, and high-value pens. Developed with Typescript, Next.js, Postgres, Prisma, JWT, and React Query. Responsive design for desktop and mobile.",
+  },
+  {
     name: "images",
-    value: "..........",
     images: [
       {
         src: "/images/penhor-desktop.png",
         alt: "Screenshot of project Penhor",
-        width: 500,
-        height: 300,
+        width: 300,
+        height: 200,
       },
       {
         src: "/images/penhor-mobile.jpeg",
         alt: "Screenshot of project Penhor",
-        width: 150,
-        height: 100,
+        width: 300,
+        height: 200,
       },
       {
         src: "/images/penhor-mobile2.jpeg",
         alt: "Screenshot of project Penhor",
-        width: 150,
-        height: 100,
+        width: 300,
+        height: 200,
       },
     ],
-  },
-  {
-    name: "description",
-    value: "Web App for Pawn of Watches, Pens and Jewellery",
-  },
-  {
-    name: "details",
-    value: "NextJS framework, Postgres database, JWT authentication",
   },
 ];

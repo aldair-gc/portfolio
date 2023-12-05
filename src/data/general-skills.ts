@@ -25,10 +25,10 @@ export const generalSkills = [
   },
   {
     name: "SOLID",
-    imageSrc: "/images/ice.png",
+    imageSrc: "/images/solid.png",
   },
   {
     name: "Design Patterns",
-    imageSrc: "/images/flag.png",
+    imageSrc: "/images/design-patterns.png",
   },
 ];
