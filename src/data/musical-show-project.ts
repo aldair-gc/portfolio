@@ -10,12 +10,12 @@ export const musicalShowProject = [
   {
     name: "description",
     value:
-      "An app created to facilitate communication between music artists and their potential hirers. The intention is to serve as a platform where musicians can be known and discovered for their abilities, while event producers can also display their needs to find the most suitable artists according to their interests.",
+      "An app created to facilitate communication between music artists and potential hirers, providing a platform for artists to showcase their talents and for event producers to articulate their needs for finding suitable performers. Additionally, it serves as a platform for service and equipment providers to showcase their offerings.",
   },
   {
     name: "details",
     value:
-      "The complete project covers UI/UX design, frontend development, database architecture, and backend implementation. Developed using Typescript in React Native, with Postgres serving as the primary database solution. The authentication system is powered by JWT (JSON Web Tokens). This application is optimized for speed, lightweight, and is operational on both Android and iOS platforms, ensuring a flawless user experience.",
+      "The project covers UI/UX research, designing, prototyping, frontend and backend development and database architecture. Developed using Typescript within React Native, with Postgres as a primary database solution. The authentication system relies on JWT (JSON Web Tokens). The application is optimized for speed, lightweight functionality, and is operational on both Android and iOS platforms, ensuring a flawless user experience.",
   },
   {
     name: "UI/UX Project",
@@ -26,28 +26,28 @@ export const musicalShowProject = [
     name: "images",
     images: [
       {
-        src: "/images/musica-show.png",
+        src: "/images/musicalshow.png",
         alt: "Screenshot of project Musica Show",
-        width: 200,
-        height: 300,
+        width: 393,
+        height: 852,
       },
       {
-        src: "/images/musica-show-2.png",
+        src: "/images/musicalshow2.png",
         alt: "Screenshot of project Musica Show",
-        width: 200,
-        height: 300,
+        width: 393,
+        height: 852,
       },
       {
-        src: "/images/musica-show-3.png",
+        src: "/images/musicalshow3.png",
         alt: "Screenshot of project Musica Show",
-        width: 200,
-        height: 300,
+        width: 393,
+        height: 852,
       },
       {
-        src: "/images/musica-show-4.png",
+        src: "/images/musicalshow4.png",
         alt: "Screenshot of project Musica Show",
-        width: 200,
-        height: 300,
+        width: 393,
+        height: 852,
       },
     ],
   },

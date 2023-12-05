@@ -10,12 +10,12 @@ export const bolsoBomProject = [
   {
     name: "description",
     value:
-      "This is a personal project app created with the intention of replacing the paper notes people often make for their day-to-day finances. The goal is to develop a simple, easy-to-understand, and user-friendly system. It's designed to be a tool that helps individuals organize their finances efficiently.",
+      "This personal project aimed to replace traditional paper-based financial notes with an easy and optimized solution. The objective was to create a simple, straightforward, and user-friendly tool to facilitating efficient financial organization.",
   },
   {
     name: "details",
     value:
-      "The complete project covers UI/UX design, frontend development, database architecture, and backend implementation. Developed using Typescript in React Native, with Postgres serving as the primary database solution. The authentication system is powered by JWT (JSON Web Tokens). This application is optimized for speed, lightweight, and is operational on both Android and iOS platforms, ensuring a flawless user experience.",
+      "The complete project encompassed UI/UX research, design, prototyping, frontend and backend development, and database architecture. Developed using Typescript in React Native, with Postgres serving as the primary database solution and employing JWT authentication. The application is optimized for speed, lightweight functionality, and seamless operation on both Android and iOS platforms, ensuring and optimal user experience.",
   },
   {
     name: "UI/UX Project",
@@ -26,28 +26,28 @@ export const bolsoBomProject = [
     name: "images",
     images: [
       {
-        src: "/images/bolso-bom.png",
+        src: "/images/bolsobom.png",
         alt: "Screenshot of project Musica Show",
-        width: 300,
-        height: 200,
+        width: 393,
+        height: 852,
       },
       {
-        src: "/images/bolso-bom-2.png",
+        src: "/images/bolsobom2.png",
         alt: "Screenshot of project Musica Show",
-        width: 300,
-        height: 200,
+        width: 393,
+        height: 852,
       },
       {
-        src: "/images/bolso-bom-3.png",
+        src: "/images/bolsobom3.png",
         alt: "Screenshot of project Musica Show",
-        width: 300,
-        height: 200,
+        width: 393,
+        height: 852,
       },
       {
-        src: "/images/bolso-bom-4.png",
+        src: "/images/bolsobom4.png",
         alt: "Screenshot of project Musica Show",
-        width: 300,
-        height: 200,
+        width: 393,
+        height: 852,
       },
     ],
   },

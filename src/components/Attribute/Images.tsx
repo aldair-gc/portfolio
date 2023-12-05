@@ -12,15 +12,7 @@ export function Images({ images, ...rest }: Props) {
       <span className="text-primary-600 dark:text-primary-400">&#91;</span>
       {images.map((image, ind, arr) => (
         <>
-          <Image
-            key={ind}
-            src={image.src}
-            alt={image.alt}
-            width={image.width}
-            height={image.height}
-            className="object-contain w-auto rounded"
-            style={{ height: image.height }}
-          />
+          <Image key={ind} src={image.src} alt={image.alt} fill className="object-fill object-top rounded" />
           {ind + 1 < arr.length && <span key={`${ind}B`}>&#44;</span>}
         </>
       ))}

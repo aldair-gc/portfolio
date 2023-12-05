@@ -15,7 +15,7 @@ export const penhorProject = [
   {
     name: "details",
     value:
-      "The system, developed with Typescript using Next.js and supported by Postgres, integrates JWT authentication for access control. Additionally, it maintains a content change log for audit purposes. And it is fully responsive, ensuring seamless operation on the small screens of mobile devices.",
+      "The system, developed with Typescript using Next.js and supported by Postgres database managed with Prisma, integrates JWT authentication for access control, TanStack Query (React Query) to manage cache and request of data and TanStack Table (React Table) to easy and fast implementation of the tables for the user. Additionally, it maintains a content change log for audit purposes. And it is fully operational and responsive, ensuring seamless operation on the small screens of mobile devices.",
   },
   {
     name: "images",
@@ -23,20 +23,20 @@ export const penhorProject = [
       {
         src: "/images/penhor-desktop.png",
         alt: "Screenshot of project Penhor",
-        width: 600,
-        height: 350,
+        width: 1280,
+        height: 1017,
       },
       {
         src: "/images/penhor-mobile.jpeg",
         alt: "Screenshot of project Penhor",
-        width: 200,
-        height: 300,
+        width: 393,
+        height: 852,
       },
       {
         src: "/images/penhor-mobile2.jpeg",
         alt: "Screenshot of project Penhor",
-        width: 200,
-        height: 300,
+        width: 393,
+        height: 852,
       },
     ],
   },
