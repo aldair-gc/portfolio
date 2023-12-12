@@ -1,7 +1,7 @@
 import { ImageInterface } from "./image-interface";
 
 export interface ItemInterface {
-  name: string;
+  label: string;
   value?: string;
   href?: string;
   images?: ImageInterface[];

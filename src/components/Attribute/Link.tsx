@@ -4,7 +4,7 @@ interface Props {
   data: ItemInterface;
 }
 
-export default function Link({ data }: Props) {
+export function Link({ data }: Props) {
   return (
     <a
       className="text-secondary-800 dark:text-secondary-200 hover:text-secondary-200 dark:hover:text-secondary-800 hover:bg-secondary-800 dark:hover:bg-secondary-200 underline hover:no-underline"

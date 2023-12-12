@@ -1,4 +1,4 @@
 export interface SkillInterface {
-  name: string;
+  label: string;
   imageSrc: string;
 }
