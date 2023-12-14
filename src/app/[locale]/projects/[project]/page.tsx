@@ -4,14 +4,17 @@ import { Section } from "@/components/Section";
 import { useTranslations } from "next-intl";
 import { Attribute } from "@/components/Attribute";
 import { ProjectList } from "@/modules/Projects/ProjectList";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 interface Props {
   params: {
     project: string;
+    locale: string;
   };
 }
 
-export default function Page({ params: { project } }: Props) {
+export default function Page({ params: { project, locale } }: Props) {
+  unstable_setRequestLocale(locale);
   const m = useTranslations("extra");
   const p = useTranslations(`projects.list.${project}`);
   const keys = ["name", "date", "description", "details"] as const;

@@ -5,8 +5,16 @@ import { Hero } from "@/modules/Hero";
 import { Projects } from "@/modules/Projects";
 import { Sticker } from "@/modules/Sticker";
 import { useTranslations } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export default function LocaleHome() {
+interface Props {
+  params: {
+    locale: string;
+  };
+}
+
+export default function LocaleHome({ params: { locale } }: Props) {
+  unstable_setRequestLocale(locale);
   const t = useTranslations("extra");
 
   return (
