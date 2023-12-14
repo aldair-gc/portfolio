@@ -25,7 +25,7 @@ export function Expertise() {
 
   return (
     <div className="w-full" id={t("title")}>
-      <Section title={t("title")} closing="squareBrace" className="flex flex-col gap-28 md:pl-20 md:pr-10 py-20 w-full">
+      <Section title={t("title")} closing="squareBrace" className="flex flex-col gap-20 md:pl-20 md:pr-10 py-20 w-full">
         {GROUPS.map((group) => (
           <Container key={group} closing="curlyBrace" className="flex w-fit flex-col gap-4 pl-4">
             <h3 className="text-2xl text-primary-800 dark:text-primary-100">

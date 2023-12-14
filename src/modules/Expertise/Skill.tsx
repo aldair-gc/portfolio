@@ -20,7 +20,7 @@ export function Skill({ label, imageSrc, ...rest }: Props) {
         alt={label}
         width={36}
         height={36}
-        className="object-contain drop-shadow dark:drop-shadow-light group-hover:scale-110 transition-all aspect-square"
+        className="object-contain drop-shadow group-hover:drop-shadow-lg dark:drop-shadow-light group-hover:scale-110 transition-all aspect-square"
       />
       <span className="text-primary-600 dark:text-primary-500">]</span>
     </div>

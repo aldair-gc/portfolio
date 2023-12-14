@@ -16,13 +16,13 @@ export function Projects() {
       <Section title={t("title")} closing="squareBrace" className="md:pl-20 md:pr-10 py-20 w-full flex flex-col gap-20">
         {projects.map((project) => (
           <div key={project} className="shadow-2xl">
-            <div className="flex justify-center p-4 md:p-8 w-full h-full md:h-[500px] bg-primary-500 dark:bg-primary-400">
+            <div className="flex justify-center p-4 md:p-8 w-full h-full md:h-[500px] bg-primary-500 dark:bg-primary-400 aspect-square">
               <Image
                 src={t(`list.${project}.image.src`)}
                 alt={t(`list.${project}.image.alt`)}
                 width={600}
                 height={400}
-                className="max-h-full w-auto max-w-fit drop-shadow-lg"
+                className="max-h-full w-auto max-w-full drop-shadow-lg object-contain"
               />
             </div>
             <div className="flex flex-col md:flex-row bg-primary-200 dark:bg-primary-700">

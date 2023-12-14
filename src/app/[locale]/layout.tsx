@@ -30,7 +30,7 @@ export default function LocaleLayout({ children, params: { locale } }: PropsWith
   const t = useTranslations();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className="scroll-smooth">
       <body className={font.className}>
         <MenuBar links={LINKS.map((link) => t(`${link}.title`))} />
         {children}
