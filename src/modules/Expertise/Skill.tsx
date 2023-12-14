@@ -7,7 +7,7 @@ interface Props extends SkillInterface, HTMLAttributes<HTMLDivElement> {}
 export function Skill({ label, imageSrc, ...rest }: Props) {
   return (
     <div
-      className="flex sm:flex-col w-fit sm:w-40 items-end sm:items-start sm:h-40 bg-primary-400 dark:bg-primary-300 justify-between p-2"
+      className="flex sm:flex-col w-fit sm:w-40 items-end sm:items-start sm:h-40 bg-primary-400 dark:bg-primary-300 justify-between p-2 group hover:scale-90 transition-all"
       {...rest}
     >
       <span className="text-primary-600 dark:text-primary-500">[</span>
@@ -20,7 +20,7 @@ export function Skill({ label, imageSrc, ...rest }: Props) {
         alt={label}
         width={36}
         height={36}
-        className="object-contain drop-shadow dark:drop-shadow-light"
+        className="object-contain drop-shadow dark:drop-shadow-light group-hover:scale-110 transition-all aspect-square"
       />
       <span className="text-primary-600 dark:text-primary-500">]</span>
     </div>

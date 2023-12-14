@@ -13,7 +13,7 @@ export function Projects() {
 
   return (
     <div className="w-full" id={t("title")}>
-      <Section title={t("title")} closing="squareBrace" className="md:pl-20 md:pr-10 py-20 w-full flex flex-col gap-28">
+      <Section title={t("title")} closing="squareBrace" className="md:pl-20 md:pr-10 py-20 w-full flex flex-col gap-20">
         {projects.map((project) => (
           <div key={project} className="shadow-2xl">
             <div className="flex justify-center p-4 md:p-8 w-full h-full md:h-[500px] bg-primary-500 dark:bg-primary-400">

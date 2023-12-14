@@ -3,6 +3,7 @@ import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 import { useTranslations } from "next-intl";
 import { Attribute } from "@/components/Attribute";
+import { ProjectList } from "@/modules/Projects/ProjectList";
 
 interface Props {
   params: {
@@ -15,6 +16,7 @@ export default function Page({ params: { project } }: Props) {
   const p = useTranslations(`projects.list.${project}`);
   const keys = ["name", "date", "description", "details"] as const;
   const IMAGES = ["image1", "image2", "image3"] as const;
+  const PROJECTLIST = ["penhor", "musicaShow", "bolsobom"];
 
   return (
     <main className="flex min-h-screen flex-col bg-primary-100 dark:bg-primary-800">
@@ -44,6 +46,7 @@ export default function Page({ params: { project } }: Props) {
           </Section>
         </div>
       </div>
+      <ProjectList list={PROJECTLIST.filter((item) => item !== project)} />
       <div className="w-full bg-primary-300 dark:bg-primary-950 pb-6" id="contact">
         <Contact textBox={m("imOpenToNewOpportunities")} />
       </div>
