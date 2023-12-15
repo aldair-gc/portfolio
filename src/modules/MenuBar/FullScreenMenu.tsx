@@ -13,7 +13,7 @@ export function FullScreenMenu({ open, links, ...rest }: Props) {
 
   return (
     <div
-      className={`fixed inset-0 top-12 backdrop-blur-md bg-primary-100/50 dark:bg-primary-800/50 z-30 overscroll-contain overflow-hidden transition-all ${
+      className={`fixed inset-0 top-12 bg-primary-100 dark:bg-primary-800 z-30 overscroll-contain overflow-hidden transition-transform ${
         open ? "h-full" : "h-0"
       }`}
       {...rest}
@@ -26,7 +26,7 @@ export function FullScreenMenu({ open, links, ...rest }: Props) {
               className={`p-4 whitespace-nowrap transition-all cursor-pointer ${
                 open ? "-translate-x-0" : "-translate-x-1/2"
               }`}
-              style={{ transitionDelay: `${ind * 100}ms` }}
+              style={{ transitionDelay: `${ind * 50}ms` }}
               href={`/#${link}`}
             >
               &gt;&nbsp;{link}
@@ -38,7 +38,7 @@ export function FullScreenMenu({ open, links, ...rest }: Props) {
             className={`p-4 transition-all cursor-pointer ${
               locale === "en" ? "text-secondary-700 dark:text-secondary-300" : "text-primary-600 dark:text-primary-200"
             } ${open ? "-translate-x-0" : "-translate-x-1/2"}`}
-            style={{ transitionDelay: `${links.length * 100}ms` }}
+            style={{ transitionDelay: `${links.length * 50}ms` }}
             href={path}
             locale="en"
           >
@@ -48,7 +48,7 @@ export function FullScreenMenu({ open, links, ...rest }: Props) {
             className={`p-4 transition-all cursor-pointer ${
               locale === "br" ? "text-secondary-700 dark:text-secondary-300" : "text-primary-600 dark:text-primary-200"
             } ${open ? "-translate-x-0" : "-translate-x-1/2"}`}
-            style={{ transitionDelay: `${(links.length + 1) * 100}ms` }}
+            style={{ transitionDelay: `${(links.length + 1) * 50}ms` }}
             href={path}
             locale="br"
           >
